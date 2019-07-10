@@ -23,7 +23,7 @@ const firebaseConfig = {
   
   const database = firebase.database();
   
-  // 2. Button for adding Employees
+  // 2. Button for adding trains
   $("#add-train-btn").on("click", function(event) {
     event.preventDefault();
   
@@ -73,7 +73,7 @@ const firebaseConfig = {
     const firstTime = childSnapshot.val().time;
     const frequency = childSnapshot.val().frequency;
   
-    // Employee Info
+    // Train Info
     console.log(trainName);
     console.log(destination);
     console.log(firstTime);
