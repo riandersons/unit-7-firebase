@@ -93,11 +93,11 @@ const firebaseConfig = {
  console.log("DIFFERENCE IN TIME: " + diffTime);
 
  // Time apart (remainder)
- let tRemainder = diffTime % tFrequency;
+ let tRemainder = diffTime % frequency;
  console.log(tRemainder);
 
  // Minute Until Train
- let tMinutesTillTrain = tFrequency - tRemainder;
+ let tMinutesTillTrain = frequency - tRemainder;
  console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
 
  // Next Train
